@@ -1,0 +1,38 @@
+//general reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+
+//variable declarations
+$color-Dark-Slate-Grey: hsl(234, 29%, 20%);
+$color-Charcoal-Grey: hsl(235, 18%, 26%);
+$color-Grey: hsl(231, 7%, 60%);
+$color-White: hsl(0, 0%, 100%);
+$color-Tomato: hsl(4, 100%, 67%);
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+header {
+  background-color: red;
+}
+main {
+  background-color: yellow;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
