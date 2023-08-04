@@ -23,14 +23,16 @@
   </head>
   <body>
     <header class="header">
-      <picture class="header__image">
+      <picture>
         <source
           srcset="./assets/images/illustration-sign-up-mobile.svg"
           media="(max-width:37.5em)"
+          class="header__image"
         />
         <img
           src="./assets/images/illustration-sign-up-desktop.svg"
           alt="header image"
+          class="header__image"
         />
       </picture>
     </header>
@@ -52,21 +54,35 @@
           </div>
         </div>
         <div class="section__list">
-          <img src="./assets/images/icon-list.svg" alt="list icon" />
+          <img
+            class="section__list--icon"
+            src="./assets/images/icon-list.svg"
+            alt="list icon"
+          />
           <div class="section__list--text">
             Measuring to ensure updates are a success
           </div>
         </div>
         <div class="section__list">
-          <img src="./assets/images/icon-list.svg" alt="list icon" />
+          <img
+            class="section__list--icon"
+            src="./assets/images/icon-list.svg"
+            alt="list icon"
+          />
           <div class="section__list--text">And much more!</div>
         </div>
 
         <form class="section__form">
           <label for="">Email address</label>
           <input type="text" placeholder="email@company.com" />
-          <button>Subscript to monthly newsletter</button>
+          <button class="section__btn">Subscribe to monthly newsletter</button>
         </form>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Triad</a>.
+        </div>
       </section>
     </main>
 
@@ -77,12 +93,5 @@
     your subscription. Dismiss message -->
 
     <!-- Success message end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Triad</a>.
-    </div>
   </body>
 </html>
