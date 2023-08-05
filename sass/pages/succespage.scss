@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+//variable declarations
+$color-Dark-Slate-Grey: hsl(234, 29%, 20%);
+$color-Charcoal-Grey: hsl(235, 18%, 26%);
+$color-Grey: hsl(231, 7%, 60%);
+$color-White: hsl(0, 0%, 100%);
+$color-Tomato: hsl(4, 100%, 67%);
+body {
+  background-color: $color-White;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  height: 50vh;
+}
+main {
+  margin: 5rem auto;
+  height: 50vh;
+  border: 1px solid white;
+  @media only screen and (min-width: 37.5em) {
+    width: 50%;
+    margin: 5rem auto;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 1rem;
+  }
+  img {
+    margin-bottom: 1rem;
+  }
+  .heading {
+    color: $color-Charcoal-Grey;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    &__text {
+      margin: 2rem 0;
+      color: $color-Dark-Slate-Grey;
+    }
+  }
+  .btn {
+    width: 100%;
+    background-color: $color-Charcoal-Grey;
+    padding: 1rem;
+    border: none;
+    color: $color-White;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transform: translateY(10rem);
+    @media only screen and (min-width: 37.5em) {
+      transform: translateY(4rem);
+
+      &:hover {
+        background-color: $color-Tomato;
+        color: $color-White;
+        box-shadow: 0 1px 10px 1px rgb(231, 103, 103);
+      }
+    }
+  }
+}

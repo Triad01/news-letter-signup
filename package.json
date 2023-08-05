@@ -4,7 +4,7 @@
   "description": "News letter sign up",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass sass/main.scss css/style.css -w"
+    "compile-sass": "sass sass/main2.scss:css/style2.css sass/main.scss:css/style.css -w"
   },
   "author": "Triad",
   "license": "ISC",

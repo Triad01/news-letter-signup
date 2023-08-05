@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="app.js"></script>
   </head>
   <body>
     <header class="header">
@@ -72,9 +73,17 @@
           <div class="section__list--text">And much more!</div>
         </div>
 
-        <form class="section__form">
-          <label for="">Email address</label>
-          <input type="text" placeholder="email@company.com" />
+        <form action="/success.html" class="section__form">
+          <div class="validation__container">
+            <label for="email">Email address</label>
+            <p class="validation__text">Valid email required</p>
+          </div>
+          <input
+            id="email"
+            class="email__input"
+            type="text"
+            placeholder="email@company.com"
+          />
           <button class="section__btn">Subscribe to monthly newsletter</button>
         </form>
         <div class="attribution">
@@ -85,13 +94,5 @@
         </div>
       </section>
     </main>
-
-    <!-- Success message start -->
-
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message -->
-
-    <!-- Success message end -->
   </body>
 </html>

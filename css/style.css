@@ -73,14 +73,22 @@ body {
 .section__form label {
   display: block;
   margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
   font-weight: 700;
 }
 .section__form input {
   margin: 0.7rem 0;
-  height: 2.5rem;
+  height: 3rem;
   width: 100%;
   border-radius: 0.5rem;
   border: 1px solid hsl(231, 7%, 60%);
+  padding: 2rem 0;
+  border: none;
+  border: 1px solid #000;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: bold;
 }
 @media only screen and (min-width: 37.5em) {
   .section__form input {
@@ -91,23 +99,45 @@ body {
   padding: 0 1rem;
   color: hsl(231, 7%, 60%);
   font-weight: 700;
+  font-size: 1.3rem;
 }
-.section__form input:focus {
-  border: 1px solid red;
+@media only screen and (min-width: 37.5em) {
+  .section__form input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
 }
 .section__btn {
   margin: 0.7rem 0;
-  height: 2.5rem;
+  height: 3rem;
   width: 100%;
   border-radius: 0.5rem;
   border: 1px solid hsl(231, 7%, 60%);
+  padding: 2rem 0;
   background-color: hsl(234, 29%, 20%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  margin-top: 2rem;
+  padding-bottom: 2.5rem;
 }
 .section__btn:hover {
   background-color: hsl(4, 100%, 67%);
-  box-shadow: 1px 0px 20px 0.1px hsl(4, 100%, 67%);
+  box-shadow: 0 1px 10px 1px rgb(231, 103, 103);
+}
+@media only screen and (min-width: 37.5em) {
+  .section__btn {
+    padding: 1rem;
+  }
+}
+.section .validation__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .validation__container .validation__text {
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: hsl(4, 100%, 67%);
+  display: none;
 }
 
 .attribution {
@@ -117,6 +147,12 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.invalid {
+  background-color: hsla(5, 72%, 76%, 0.993);
+  color: red;
+  border: 3px solid blue;
 }
 
 /*# sourceMappingURL=style.css.map */
