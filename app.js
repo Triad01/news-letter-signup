@@ -4,8 +4,9 @@ const emailInput = document.querySelector(".email__input");
 const validationText = document.querySelector(".validation__text");
 
 // validating upon form submission=======
-form.addEventListener("submit", () => {
-  const validEmail = emailInput.value.includes("@");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const validEmail = emailInput.value.includes("@") && emailInput.value !== 0;
   if (validEmail) {
     window.location.href = "/success.html";
   } else {
